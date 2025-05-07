@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, BookOpen, Image, Settings, Search } from 'lucide-react';
+import { Home, BookOpen, Image, Settings } from 'lucide-react';
 import AdminLogin from './admin/AdminLogin';
 import { useAdminStore } from '../store/adminStore';
 
@@ -52,13 +52,6 @@ const Navigation: React.FC = () => {
             )}
             <Image size={20} className="transition-transform hover:scale-110" />
           </Link>
-          
-          <button 
-            className="text-neutral-400 hover:text-white transition-all duration-300"
-            aria-label="Search"
-          >
-            <Search size={20} className="transition-transform hover:scale-110" />
-          </button>
           
           <button 
             onClick={() => setShowAdminLogin(true)}
